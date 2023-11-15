@@ -79,7 +79,7 @@ public class C13_PUT_SoftAssertExpectedBodyTest {
         //3-Response Kaydetmek
 
         Response response=given()
-                .contentType(ContentType.JSON)
+                .contentType(ContentType.JSON) //gette burda when diyorduk.
                 .when().body(reqBody.toString()).put(url);
 
         // response.prettyPrint();
